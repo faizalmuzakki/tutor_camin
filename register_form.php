@@ -26,6 +26,7 @@ if($_POST['register']){
                         echo '<p><b>Selamat... Anda berhasil Register!</b></p>';
                         
 					} else {
+						// die("Connection error: ".$conn->error);
 						echo '<p>Gagal melakukan Register, coba lagi!</p>';
 					}
 				} else {
@@ -40,7 +41,7 @@ if($_POST['register']){
 	} else {
 		echo '<p>Semua wajib Anda isi!</p>';
     }
-    echo '<p>Kembali ke halaman <a href="login.php">login</a> </p>';
+    echo '<p>Kembali ke halaman <a href="index.php">login</a> </p>';
 } else {
     header("Location: register.php");
 }
